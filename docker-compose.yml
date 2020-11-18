@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+
+  databricks: 
+    build:
+      context: ./
+      dockerfile: dockerfiles/jupyter_spark_dockerfile
+    image: img_databricks_jupyter_spark
+    container_name: cont_databricks_certification
+    environment:
+      CONT_PORT: 8880
+    ports:
+      - "8880:8880"
+    volumes:
+      - ./docker_volumes/databricks_certification:/project
+    secrets:
+      - sec_jupyter
+
+secrets:
+  sec_jupyter:
+    file: docker_passwords/jupyter_password.txt

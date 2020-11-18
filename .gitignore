@@ -1,0 +1,8 @@
+docker_volumes/databricks_certification/venv/
+docker_volumes/databricks_certification/.ipynb_checkpoints/
+docker_volumes/databricks_certification/__pycache__/
+docker_volumes/databricks_certification/data/
+!docker_volumes/databricks_certification/data/first_document.txt
+!docker_volumes/databricks_certification/data/second_document.txt
+!docker_volumes/databricks_certification/data/test.csv
+docker_passwords/jupyter_password.txt
